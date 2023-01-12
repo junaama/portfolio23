@@ -69,15 +69,15 @@ export default function Home() {
       </Container>
       <Footer>
         <div>
-          <a target="_blank" href="mailto:0naama0@gmail.com">
+          <a target="_blank" href="mailto:0naama0@gmail.com" rel="noreferrer" >
             Email
           </a>
           <br />
-          <a target="_blank" href="https://linkedin.com/in/naamapaulemont">
+          <a target="_blank" href="https://linkedin.com/in/naamapaulemont" rel="noreferrer" >
             LinkedIn
           </a>
           <br />
-          <a target="_blank" href="https://twitter.com/0naama">
+          <a target="_blank" href="https://twitter.com/0naama" rel="noreferrer" >
             Twitter
           </a>
         </div>
