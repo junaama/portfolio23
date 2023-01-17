@@ -52,7 +52,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <Header />
+        <Header />{" "}
+        <Footer>
+          <a target="_blank" href="mailto:0naama0@gmail.com" rel="noreferrer">
+            Email
+          </a>
+          <a
+            target="_blank"
+            href="https://linkedin.com/in/naamapaulemont"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a target="_blank" href="https://twitter.com/0naama" rel="noreferrer">
+            Twitter
+          </a>
+          <a target="_blank" href="https://github.com/junaama" rel="noreferrer">
+            GitHub
+          </a>
+        </Footer>
         <Navigation />
         <ProjectContainer>
           {projects.map((project) => (
@@ -67,21 +85,6 @@ export default function Home() {
           ))}
         </ProjectContainer>
       </Container>
-      <Footer>
-        <div>
-          <a target="_blank" href="mailto:0naama0@gmail.com" rel="noreferrer" >
-            Email
-          </a>
-          <br />
-          <a target="_blank" href="https://linkedin.com/in/naamapaulemont" rel="noreferrer" >
-            LinkedIn
-          </a>
-          <br />
-          <a target="_blank" href="https://twitter.com/0naama" rel="noreferrer" >
-            Twitter
-          </a>
-        </div>
-      </Footer>
     </>
   );
 }
@@ -91,6 +94,8 @@ const Container = styled.div`
   padding: 24px;
   flex-direction: column;
   gap: 24px;
+  min-height: 100%;
+  position: relative;
 `;
 
 const ProjectContainer = styled.div`
@@ -105,8 +110,15 @@ const ProjectContainer = styled.div`
   }
 `;
 
-const Footer = styled.footer`
+const Footer = styled.div`
   padding: 4px;
-  background-color: #58382d;
   color: white;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 0 60px;
+  @media (max-width: 500px) {
+    padding: 0 24px;
+  }
 `;

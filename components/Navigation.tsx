@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 export const Navigation = () => {
   const tabs = [
-    { title: "Works", path: "/" },
-    { title: "Blog (coming soon)", path: "" },
+    { title: "Projects", path: "/" },
+    // { title: "Blog (coming soon)", path: "" },
   ];
 
   const router = useRouter();
@@ -33,7 +33,7 @@ export const Navigation = () => {
 
 const Container = styled.div`
   display: flex;
-  height: 60px;
+  height: 36px;
   color: #e0dbd5;
   background-color: #58382d;
   font-size: 24px;
@@ -49,10 +49,10 @@ const Divider = styled.p`
 const StyledLink = styled(Link)<{ $decorate: boolean }>`
   padding: 4px;
   font-family: "Semplicita-Medium", sans-serif;
-
+  color: #e0dbd5;
   @media (hover: hover) {
     &:hover {
-      background-color: #adc3e0;
+      color: #adc3e0;
     }
   }
   @media (max-width: 768px) {

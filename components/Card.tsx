@@ -26,8 +26,8 @@ export const Card = ({ image, title, description, link, type = "" }: Props) => {
 };
 
 const CardContainer = styled.div`
-  background-color: #adc3e0;
-  padding: 16px;
+  border: 1px solid #58382d;
+  padding: 8px;
   width: 245px;
   height: 300px;
   display: flex;
@@ -58,4 +58,3 @@ const FooterContainer = styled.div`
   justify-content: space-between;
   height: 100%;
 `;
-
